@@ -226,12 +226,6 @@ public class ConventionBasedTestProxyGenerator
         }
 
         @Override
-        public String dataProviderDynamicClass()
-        {
-            return "";
-        }
-
-        @Override
         public boolean alwaysRun()
         {
             return false;

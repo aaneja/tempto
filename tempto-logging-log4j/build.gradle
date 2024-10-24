@@ -34,7 +34,7 @@ publishing {
         maven(MavenPublication) {
             groupId 'com.github.aaneja.tempto'
             artifactId artifactId
-            version 'jdk17_snapshot'
+            version 'jdk8_snapshot'
         }
     }
 }

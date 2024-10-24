@@ -79,29 +79,13 @@ publishing {
         maven(MavenPublication) {
             groupId 'com.github.aaneja.tempto'
             artifactId artifactId
-            version 'jdk17_snapshot'
+            version 'jdk8_snapshot'
         }
     }
 }
 
 test {
     useJUnitPlatform()
-
-    jvmArgs=['--add-opens', 'java.base/java.lang=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.lang.reflect=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.net=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.util=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.math=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.io=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.util.concurrent=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.util.concurrent.atomic=ALL-UNNAMED',
-             '--add-opens', 'java.base/jdk.internal.loader=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.security=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.nio.charset=ALL-UNNAMED',
-             '--add-opens', 'java.base/sun.nio.fs=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.lang.reflect=ALL-UNNAMED',
-             '--add-opens', 'java.sql/java.sql=ALL-UNNAMED',
-             '--add-opens', 'java.base/java.nio.file=ALL-UNNAMED']
 
     // Other test task configurations...
 }

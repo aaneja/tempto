@@ -23,16 +23,16 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 
 plugins.withType(JavaPlugin) {
-    sourceCompatibility = 17
-    targetCompatibility = 17
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
 }
 
 ext.versions = [
         assertj      : '2.0.0',
-        guava        : '33.3.1-jre',
+        guava        : '21.0',
         guice        : '4.0',
         log4j        : '1.2.17',
-        testng       : '7.10.2',
+        testng       : '7.5',
         junit        : '4.12',
         spock        : '2.3-groovy-4.0',
         slf4j        : '1.7.12',
@@ -180,7 +180,7 @@ configure(subprojects - expected_result_generator - tempto_examples) {
             maven(MavenPublication) {
                 groupId 'com.github.aaneja.tempto'
                 artifactId artifactId
-                version 'jdk17_snapshot'
+                version 'jdk8_snapshot'
 
                 from components.java
 
