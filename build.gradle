@@ -192,7 +192,7 @@ configure(subprojects - expected_result_generator - tempto_examples) {
 
         repositories {
             maven {
-                url = uri('https://oss.sonatype.org/service/local/staging/deploy/maven2/')
+                url = uri('https://maven.pkg.github.com/prestodb/presto')
                 credentials {
                     username = System.getenv('NEXUS_USERNAME')
                     password = System.getenv('NEXUS_PASSWORD')
@@ -200,7 +200,7 @@ configure(subprojects - expected_result_generator - tempto_examples) {
             }
 
             maven {
-                url = uri('https://oss.sonatype.org/content/repositories/snapshots/')
+                url = uri('https://maven.pkg.github.com/prestodb/presto')
                 credentials {
                     username = System.getenv('NEXUS_USERNAME')
                     password = System.getenv('NEXUS_PASSWORD')
